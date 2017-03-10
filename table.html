@@ -17,9 +17,9 @@ function table(idx){
 			this.binds="";//it is array. every element of array attached orderly to one column of table
 			this.dataarray=[];//the recieved json format is changed and stored as an array in here
 			this.makeTable =function(){
-											function create(element)
-											//this function  creates table elements
-											{
+										function create(element)
+									//this function  creates table elements
+					{
 													var prefix={"table":"tl_","thead":"the_","tbody":"tb_","tfoot":"tf_","tr":"r_","th":"c_"};//, this has prefix for every table elment's id  that is created
 													var id=prefix[element]+idx;//example if table id is 'gng' then  thead id becomes the_gng or for tfoot ,it becomes tf_gng and so on
 													var result=document.getElementById(id)&&document.getElementById(id).remove()|| document.createElement(element);
